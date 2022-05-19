@@ -1,0 +1,26 @@
+{
+  "name": "cia-decrypter",
+  "version": "1.0.0",
+  "description": "A tool for decrypting Nintendo 3DS CIA archive file easly",
+  "main": "src/index.js",
+  "author": {
+    "name": "Yuzesky",
+    "email": "yuri.delzesky@gmail.com"
+  },
+  "license": "MIT",
+  "scripts": {
+    "test": "echo \"Test\""
+  },
+  "homepage": "https://github.com/yuzesky/cia-decrypter#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yuzesky/cia-decrypter.git"
+  },
+  "bugs": {
+    "url": "https://github.com/yuzesky/cia-decrypter/issues"
+  },
+  "keywords": [
+    "cia",
+    "decrypter"
+  ]
+}
