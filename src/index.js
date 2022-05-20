@@ -30,11 +30,15 @@ const { centerString, printAsciiBanner } = require('./utils/utils');
 	if (fs.existsSync(ciaArchivePathToDecrypt)) {
 		// Test if the given path is a CIA archive
 		if (hasExt(ciaArchivePathToDecrypt, 'cia')) {
+			const putNcchPartitionsInZipFile = readlineSync.keyInYN('Do you want to save the ncch partition in a zip file ?: ');
+
 			const ciaArchiveName = path.basename(ciaArchivePathToDecrypt).replace('.cia', '');
 
 			console.log('\n');
 
-			tasks
+			tasks({
+				putNcchPartitionsInZipFile: putNcchPartitionsInZipFile
+			})
 				.run({
 					ciaArchiveName: ciaArchiveName,
 					ciaArchivePath: ciaArchivePathToDecrypt

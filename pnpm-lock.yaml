@@ -7,6 +7,7 @@ specifiers:
   execa: 5.1.1
   has-ext: ^1.0.1
   listr2: ^4.0.5
+  node-native-zip: ^1.1.0
   prettier: ^2.6.2
   readline-sync: ^1.4.10
   strip-color: ^0.1.0
@@ -18,6 +19,7 @@ dependencies:
   execa: 5.1.1
   has-ext: 1.0.1
   listr2: 4.0.5
+  node-native-zip: 1.1.0
   readline-sync: 1.4.10
   strip-color: 0.1.0
   trash: 7.2.0
@@ -380,6 +382,10 @@ packages:
     engines: {node: '>=10.17'}
     dependencies:
       path-exists: 4.0.0
+    dev: false
+
+  /node-native-zip/1.1.0:
+    resolution: {integrity: sha1-W3syKIpQKiTF1aek1h4+AqMfuV0=}
     dev: false
 
   /npm-run-path/3.1.0:

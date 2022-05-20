@@ -1,6 +1,6 @@
 {
   "name": "cia-decrypter",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A tool for decrypting Nintendo 3DS CIA archive file easly",
   "main": "src/index.js",
   "author": {
@@ -30,6 +30,7 @@
     "execa": "5.1.1",
     "has-ext": "^1.0.1",
     "listr2": "^4.0.5",
+    "node-native-zip": "^1.1.0",
     "readline-sync": "^1.4.10",
     "strip-color": "^0.1.0",
     "trash": "7.2.0"
