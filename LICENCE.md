@@ -1,7 +1,7 @@
 The MIT License (MIT)
 =====================
 
-Copyright © 2022 Yuzesky
+Copyright © `2022` `YuZesky <yuri.delzesky@gmail.com>`
 
 Permission is hereby granted, free of charge, to any person
 obtaining a copy of this software and associated documentation
