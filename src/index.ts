@@ -1,25 +1,26 @@
-import libcdcore from './core';
+import core from './utils/core';
 
 import isNotEmptyArray from 'is-not-empty-array';
 import { isObjectEmpty as isEmptyObject } from 'object-is-empty';
 
-import { args, unknowArgs, unknowArgsError } from './utils';
-
-import { printBanner } from './ascii-banner';
+import { args, printBanner, printInfo, unknowArgs, unknowArgsError, asciiBannerPath } from './utils';
 
 async function main() {
 	console.clear();
-	printBanner();
+	await printBanner();
 
 	// Unknow arg detected
 	if (isNotEmptyArray(unknowArgs)) return unknowArgsError(unknowArgs);
 
-	if (!isEmptyObject(args)) {
+	// Main process
+	if (isEmptyObject(args)) {
+		let random = Math.random() * (50 - 1) + 1;
+		printInfo(`Rust fibonacci: ${core.fibonacci(random)}`);
+
+		printInfo(`File ${asciiBannerPath} exist ? (with rust): ${String(core.fileExist(asciiBannerPath))}`);
+	} else {
 		// wip
 		console.log('WIP');
-	} else {
-		let random = Math.random() * (50 - 1) + 1;
-		console.log(`Rust fibonacci: ${libcdcore.fibonacci(random)}`);
 	}
 }
 

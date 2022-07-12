@@ -1,8 +1,12 @@
+// Utils
+mod utils;
+pub use utils::assert::{ fileExist };
+
 #[no_mangle]
-pub extern fn fibonacci(x: i32) -> i32 {
-  if x <= 2 {
-    return 1;
-  } else {
-    return fibonacci(x - 1) + fibonacci(x - 2);
-  }
+pub extern "C" fn fibonacci(x: i32) -> i32 {
+    if x <= 2 {
+        return 1;
+    } else {
+        return fibonacci(x - 1) + fibonacci(x - 2);
+    }
 }
